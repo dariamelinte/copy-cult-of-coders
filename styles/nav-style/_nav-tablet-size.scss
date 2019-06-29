@@ -1,0 +1,17 @@
+nav{
+    @media screen and  (max-width: $nav-tablet-size) and (min-width: $nav-phone-size) {
+        padding: 0 1.5%;
+
+        .nav-item, .nav-button{
+            margin-left: 20px;
+            a{
+                font-size: 15px;
+            }
+        }
+
+        .nav-button{
+            padding: 10px 15px;
+        }
+
+    }
+}

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+}
+
+// Colors
+
+$background-color: #F5F4F4;
+$black-color: #000;
+$grey-color: #ccc;
+$orange-color: #E84E1B;
+$white-color: white;
+$background-opac: rgb(255, 255, 255, .8);
+$shadow: rgb( 0, 0, 0, 0.2);
+
+
+// Nav dimensions 
+$nav-desktop-size : 1600px;
+$nav-tablet-size : 1200px;
+$nav-phone-size : 900px;
+
+
+
+@mixin flex-align {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}

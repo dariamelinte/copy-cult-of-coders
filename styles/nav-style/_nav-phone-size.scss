@@ -1,0 +1,12 @@
+nav{
+    @media screen and  (max-width: $nav-phone-size){
+        
+        height: 13vh;
+
+        .nav-logo{
+            padding: 0 2%;
+            height: 3.5vh;
+        }
+
+    }
+}

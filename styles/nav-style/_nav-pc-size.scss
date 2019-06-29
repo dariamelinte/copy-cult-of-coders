@@ -1,0 +1,45 @@
+nav{
+    height: 14vh;
+    background: $background-color;
+    padding: 0 4%;
+    transition: background-color .2s ease-in-out;
+    @include flex-align();
+
+    .nav-logo{
+        height: 40%;
+    }
+
+    .nav-item {
+        display: inline-block;
+        margin-left: 50px;
+
+        a{
+            color: $black-color;
+            font-size: 18px;
+            &:hover{
+                color: $orange-color;
+            }
+        }
+        
+        .active{
+            color: $orange-color;
+            font-weight: bold;
+        }
+
+    }
+
+    .nav-button{        
+        display: inline-block;
+        margin-left: 50px;
+        background-color: $orange-color;
+        border-radius: 4px;
+        padding: 14px 17px;
+
+        a{
+            color: $white-color;
+            &:hover{
+                color: $white-color;
+            }
+        }
+    }
+}

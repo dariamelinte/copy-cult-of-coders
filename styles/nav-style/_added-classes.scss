@@ -1,0 +1,16 @@
+a{
+    cursor: pointer;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $background-opac;   
+    box-shadow:  0 0 15px 5px $shadow; 
+}
+
+.underline{
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 6px;
+}

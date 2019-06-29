@@ -1,0 +1,14 @@
+nav{
+    @media screen and  (max-width: $nav-desktop-size) and (min-width: $nav-tablet-size) {
+        // height: 10vh;
+        padding: 0 3%;
+        .nav-item{
+            margin-left: 45px;
+        }
+
+        .nav-button{
+            margin-left: 45px;
+        }
+        
+    }
+}
