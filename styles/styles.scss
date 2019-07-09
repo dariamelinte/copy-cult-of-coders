@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap');
 @import '_mixins-and-vars.scss';
 
 // nav style
@@ -7,3 +7,6 @@
 @import 'nav-style/nav-desktop-size';
 @import 'nav-style/nav-tablet-size';
 @import 'nav-style/nav-phone-size';
+
+// home style
+@import 'home-style/home-pc-size';

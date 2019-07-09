@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -43,7 +43,7 @@ a {
 }
 nav {
   height: 14vh;
-  background: #F5F4F4;
+  background: #F7F5F6;
   padding: 0 4%;
   transition: background-color 0.2s ease-in-out;
   display: flex;
@@ -59,7 +59,7 @@ nav .hamburger-menu {
 nav .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   left: 0;
   top: 0;
   height: 100vh;
@@ -169,6 +169,43 @@ nav .nav-button a:hover {
 
 .modal-opener {
   display: flex;
+}
+
+.home {
+  height: 80vh;
+  background: #F7F5F6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .image, .home .home-right-image, .home .home-left-image {
+  width: 45vw;
+  height: 75vh;
+}
+.home .home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.home .home-content .title {
+  font-size: 22px;
+  color: #E84E1B;
+  padding: 5%;
+}
+.home .home-content .title .active {
+  font-weight: bold;
+}
+.home .home-content .motto {
+  font-family: "Roboto Condensed";
+  font-weight: 200;
+  font-size: 58px;
+  padding: 2% 0;
+}
+.home .home-content .text {
+  color: #666;
+  font-weight: 100;
+  font-size: 22px;
 }
 
 /*# sourceMappingURL=styles.css.map */
