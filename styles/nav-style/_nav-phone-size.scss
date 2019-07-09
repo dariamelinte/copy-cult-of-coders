@@ -2,11 +2,57 @@ nav{
     @media screen and  (max-width: $nav-phone-size){
         
         height: 13vh;
+        padding: 0 3%;
 
         .nav-logo{
-            padding: 0 2%;
             height: 3.5vh;
         }
 
+        ul{
+            display: none;
+        }
+
+        .hamburger-menu{
+            display: block;
+            color:  $orange-color;
+            cursor: pointer;
+        }
+
+        .modal-content{
+
+            width: 100%;
+            height: 100%;
+            display: flex;
+            
+            .nav-wrapper{
+                display: flex;
+                width: 94vw;
+                height: 100vh;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+    
+                .modal-item{
+                    margin: 2%;
+                    a{
+                        font-size: 22px;
+                    }
+                }
+
+                .nav-button{
+                    padding: 8px 14px;
+                }
+            }
+
+            .closeBtn{
+                font-size: 46px;
+                color: $orange-color;
+                cursor: pointer;
+            }
+        }
     }
+}
+
+.modal-opener{
+    display: flex;
 }

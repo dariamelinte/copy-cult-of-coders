@@ -25,6 +25,22 @@ a {
   padding-bottom: 6px;
 }
 
+@keyframes slide-in {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes slide-out {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100vw;
+  }
+}
 nav {
   height: 14vh;
   background: #F5F4F4;
@@ -36,6 +52,19 @@ nav {
 }
 nav .nav-logo {
   height: 40%;
+}
+nav .hamburger-menu {
+  display: none;
+}
+nav .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
 }
 nav .nav-item {
   display: inline-block;
@@ -96,11 +125,50 @@ nav .nav-button a:hover {
 @media screen and (max-width: 900px) {
   nav {
     height: 13vh;
+    padding: 0 3%;
   }
   nav .nav-logo {
-    padding: 0 2%;
     height: 3.5vh;
   }
+  nav ul {
+    display: none;
+  }
+  nav .hamburger-menu {
+    display: block;
+    color: #E84E1B;
+    cursor: pointer;
+  }
+  nav .modal-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  nav .modal-content .nav-wrapper {
+    display: flex;
+    width: 94vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .modal-content .nav-wrapper .modal-item {
+    margin: 2%;
+  }
+  nav .modal-content .nav-wrapper .modal-item a {
+    font-size: 22px;
+  }
+  nav .modal-content .nav-wrapper .nav-button {
+    padding: 8px 14px;
+  }
+  nav .modal-content .closeBtn {
+    font-size: 46px;
+    color: #E84E1B;
+    cursor: pointer;
+  }
+}
+
+.modal-opener {
+  display: flex;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -14,3 +14,22 @@ a{
     border-bottom: 1px solid currentColor;
     padding-bottom: 6px;
 }
+
+@keyframes slide-in {
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+@keyframes slide-out{
+    0%{
+        left: 0;
+    }
+
+    100%{
+        left: 100vw;
+    }
+}
