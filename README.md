@@ -1,7 +1,11 @@
 # copy-cult-of-coders
 
-I am doing this project in order to get a better understanding over Sass and Javascript;
+The site can be found at the following link:
+https://dariamelinte.github.io/copy-cult-of-coders/
 
+I am doing this project in order to get a better understanding over Sass and Javascript;
+#
+Not finished yet (only the navbar is done).
 ##
 
-I do not own the credits for this site, which is just a reproduction of Cult of Coders' site.
+This is just a reproduction of Cult of Coders' site.
