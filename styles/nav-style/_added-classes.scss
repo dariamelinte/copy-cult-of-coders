@@ -8,6 +8,7 @@ a{
     width: 100%;
     background-color: $background-opac;   
     box-shadow:  0 0 15px 5px $shadow; 
+    z-index: 10;
 }
 
 .underline{
