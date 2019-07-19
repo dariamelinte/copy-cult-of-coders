@@ -4,4 +4,4 @@ I am doing this project in order to get a better understanding over Sass and Jav
 
 ##
 
-I do not own the credits for this site, which is just a reproduction of Cult of Coders' site.
+This is just a reproduction of Cult of Coders' site.
