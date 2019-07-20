@@ -4,6 +4,10 @@
         height: 75vh;
         background: $background-color;
 
+        .wrapper{
+            overflow: hidden;
+        }
+
         .image{
             width: 400px;
             height: 70vh;
@@ -18,7 +22,7 @@
         .home-right-image{
             @extend .image;
             position: absolute;
-            left: calc(100% - 400px);
+            right: 0;
         }
 
         // clear: both;

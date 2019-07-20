@@ -176,6 +176,9 @@ nav .nav-button a:hover {
   height: 75vh;
   background: #F7F5F6;
 }
+.home .home-background .wrapper {
+  overflow: hidden;
+}
 .home .home-background .image, .home .home-background .home-right-image, .home .home-background .home-left-image {
   width: 400px;
   height: 70vh;
@@ -186,7 +189,7 @@ nav .nav-button a:hover {
 }
 .home .home-background .home-right-image {
   position: absolute;
-  left: calc(100% - 400px);
+  right: 0;
 }
 .home .home-wrapper {
   height: 70vh;
@@ -230,7 +233,7 @@ nav .nav-button a:hover {
     left: -50px;
   }
   .home .home-background .home-right-image {
-    left: calc(100% - 350px);
+    right: -50px;
   }
 }
 @media screen and (max-width: 1200px) and (min-width: 750px) {
