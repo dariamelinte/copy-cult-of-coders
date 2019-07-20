@@ -3,31 +3,36 @@
     .home-background{ 
         height: 75vh;
         background: $background-color;
-        @include flex-align();
 
         .image{
-            width: 25vw;
-            height: 75vh;
+            width: 400px;
+            height: 70vh;
         }
 
         .home-left-image{
             @extend .image;
+            position: relative; 
+            left: 0;
         }
     
         .home-right-image{
             @extend .image;
+            position: absolute;
+            right: 0;
         }
+
+        // clear: both;
     }    
     
     .home-wrapper{
-        height: 75vh;
+        height: 70vh;
         position: absolute;
         top: 14vh;
         width: 100%; 
         
         .home-content{
             height: inherit;
-
+            
             display: flex;
             justify-content: center;
             align-items: center;
@@ -42,9 +47,9 @@
             }
 
             .motto{
-                font-size: 60px;
+                font-size: 72px;
                 font-weight: 100;
-                padding: 0 18%;
+                padding: 0 22%;
                 margin-bottom: 2%;
             }
 

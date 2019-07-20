@@ -175,16 +175,21 @@ nav .nav-button a:hover {
 .home .home-background {
   height: 75vh;
   background: #F7F5F6;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .home .home-background .image, .home .home-background .home-right-image, .home .home-background .home-left-image {
-  width: 25vw;
-  height: 75vh;
+  width: 400px;
+  height: 70vh;
+}
+.home .home-background .home-left-image {
+  position: relative;
+  left: 0;
+}
+.home .home-background .home-right-image {
+  position: absolute;
+  right: 0;
 }
 .home .home-wrapper {
-  height: 75vh;
+  height: 70vh;
   position: absolute;
   top: 14vh;
   width: 100%;
@@ -203,15 +208,74 @@ nav .nav-button a:hover {
   margin-bottom: 4%;
 }
 .home .home-wrapper .home-content .motto {
-  font-size: 60px;
+  font-size: 72px;
   font-weight: 100;
-  padding: 0 18%;
+  padding: 0 22%;
   margin-bottom: 2%;
 }
 .home .home-wrapper .home-content .text {
   color: #808080;
   font-size: 22px;
   font-weight: 100;
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1200px) {
+  .home .home-wrapper .home-content .motto {
+    font-size: 58px;
+    padding: 0 20%;
+  }
+}
+@media screen and (max-width: 1400px) and (min-width: 900px) {
+  .home .home-background .home-left-image {
+    left: -50px;
+  }
+  .home .home-background .home-right-image {
+    right: -50px;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 750px) {
+  .home .home-wrapper .home-content .motto {
+    font-size: 48px;
+    padding: 0 20%;
+  }
+  .home .home-wrapper .home-content .text {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .home .home-wrapper {
+    background-color: rgba(247, 245, 246, 0.9);
+  }
+  .home .home-wrapper .home-content .motto {
+    font-size: 42px;
+    padding: 0 16%;
+  }
+  .home .home-wrapper .home-content .text {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .home .home-background {
+    display: flex;
+    align-items: center;
+  }
+  .home .home-background .image, .home .home-background .home-left-image, .home .home-background .home-right-image {
+    width: 40%;
+    height: auto;
+  }
+  .home .home-wrapper .home-content .title {
+    font-size: 18px;
+    padding: 0 2%;
+  }
+  .home .home-wrapper .home-content .motto {
+    font-size: 28px;
+    padding: 0 8%;
+    margin-bottom: 4%;
+  }
+  .home .home-wrapper .home-content .text {
+    font-size: 16px;
+    padding: 0 2%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,5 @@
 nav{
-    @media screen and  (max-width: $nav-tablet-size) and (min-width: $nav-phone-size) {
+    @media screen and  (max-width: $tablet-size) and (min-width: $phone-size) {
         padding: 0 1.5%;
 
         .nav-item, .nav-button{

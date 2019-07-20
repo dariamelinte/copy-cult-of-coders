@@ -1,0 +1,35 @@
+@media screen and  (max-width: 1400px) and (min-width: $phone-size){
+    .home{
+
+        .home-background{
+
+            .home-left-image{
+                left: -50px;
+            }
+
+            .home-right-image{
+                right: -50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-size) and (min-width: 750px){
+    .home{
+
+        .home-wrapper{
+
+            .home-content{
+
+                .motto{
+                    font-size: 48px;
+                    padding: 0 20%;
+                }
+
+                .text{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
