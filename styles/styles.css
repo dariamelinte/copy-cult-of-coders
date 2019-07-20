@@ -175,24 +175,26 @@ nav .nav-button a:hover {
 .home .home-background {
   height: 75vh;
   background: #F7F5F6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.home .home-background .wrapper {
-  overflow: hidden;
-}
-.home .home-background .image, .home .home-background .home-right-image, .home .home-background .home-left-image {
+.home .home-background .image {
   width: 400px;
   height: 70vh;
 }
 .home .home-background .home-left-image {
-  position: relative;
-  left: 0;
+  background: url("../assets/left-image.png") no-repeat;
+  background-position: left;
+  background-size: contain;
 }
 .home .home-background .home-right-image {
-  position: absolute;
-  right: 0;
+  background: url("../assets/right-image.png") no-repeat;
+  background-position: right;
+  background-size: contain;
 }
 .home .home-wrapper {
-  height: 70vh;
+  height: 75vh;
   position: absolute;
   top: 14vh;
   width: 100%;
@@ -230,16 +232,16 @@ nav .nav-button a:hover {
 }
 @media screen and (max-width: 1400px) and (min-width: 900px) {
   .home .home-background .home-left-image {
-    left: -50px;
+    background-position: -50px;
   }
   .home .home-background .home-right-image {
-    right: -50px;
+    background-position: calc(100% + 50px);
   }
 }
 @media screen and (max-width: 1200px) and (min-width: 750px) {
   .home .home-wrapper .home-content .motto {
     font-size: 48px;
-    padding: 0 20%;
+    padding: 0 15%;
   }
   .home .home-wrapper .home-content .text {
     font-size: 20px;
@@ -262,9 +264,9 @@ nav .nav-button a:hover {
     display: flex;
     align-items: center;
   }
-  .home .home-background .image, .home .home-background .home-left-image, .home .home-background .home-right-image {
-    width: 40%;
-    height: auto;
+  .home .home-background .image {
+    width: 50vw;
+    height: 90vw;
   }
   .home .home-wrapper .home-content .title {
     font-size: 18px;

@@ -3,10 +3,9 @@
     .home-background{ 
         height: 75vh;
         background: $background-color;
-
-        .wrapper{
-            overflow: hidden;
-        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
         .image{
             width: 400px;
@@ -14,22 +13,20 @@
         }
 
         .home-left-image{
-            @extend .image;
-            position: relative; 
-            left: 0;
-        }
-    
-        .home-right-image{
-            @extend .image;
-            position: absolute;
-            right: 0;
+            background: url("../assets/left-image.png") no-repeat;
+            background-position: left;
+            background-size: contain;
         }
 
-        // clear: both;
+        .home-right-image{
+            background: url("../assets/right-image.png") no-repeat;
+            background-position: right;
+            background-size: contain;
+        }
     }    
     
     .home-wrapper{
-        height: 70vh;
+        height: 75vh;
         position: absolute;
         top: 14vh;
         width: 100%; 
