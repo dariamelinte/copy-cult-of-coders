@@ -186,7 +186,7 @@ nav .nav-button a:hover {
 }
 .home .home-background .home-right-image {
   position: absolute;
-  right: 0;
+  left: calc(100% - 400px);
 }
 .home .home-wrapper {
   height: 70vh;
@@ -230,7 +230,7 @@ nav .nav-button a:hover {
     left: -50px;
   }
   .home .home-background .home-right-image {
-    right: -50px;
+    left: calc(100% - 350px);
   }
 }
 @media screen and (max-width: 1200px) and (min-width: 750px) {
